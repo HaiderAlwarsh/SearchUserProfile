@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 10px;
+}
+
+body{
+
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #2e2a68 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#main{
+    height: 100%;
+    max-width: 70rem;
+}
+
+.card{
+    background-color: #4c2885;
+    background-image: linear-gradient(315deg, #4c2885 0%, #4c11ac 74%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    border-radius: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+
+.avatar{
+    height: 14rem;
+    width: 14rem;
+    border-radius: 8rem; 
+    border: .8rem solid #2E2A68;
+}
+
+.right-side{
+    margin-left: 3rem;
+}
+
+
+.right-side-username{
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.right-side-userBio{
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+}
+
+.info li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.info li:nth-child(2){
+    margin: 0 6rem 0 6rem;
+}
+
+#search{
+    width: 19rem;
+    height: 4rem;
+    margin-bottom: 3rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    border: none;
+    background-color: #4c2885;
+    background-image: linear-gradient(315deg, #4c2885 0%, #4c11ac 74%);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#search::placeholder{
+    color: #bbb;
+}
+
+#search:focus{
+    outline: none;
+}
+
+#repos{
+    display: flex;
+    align-items: baseline;
+    flex-flow: wrap;
+    margin-top: 2rem;
+}
+
+#repos li{
+    list-style-type: none;
+    font-size: 1rem;
+    margin: .5rem;
+    background-color: #2a2a72;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+#repos li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.reposTitle{
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 3rem 0 1rem 0;
+}
+
+@media (max-width: 800px) {
+    html{
+        font-size: 6px;
+    }
+
+    #main{
+        width: 80%;
+    }
+
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .right-side{
+        margin-left: 0;
+    }
+
+    .info{
+        width: 80%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .info li:nth-child(2) {
+        margin: 0; 
+    }
+
+    #search{
+        width: 30rem;
+        height: 5rem;
+    } 
+
+    #search::placeholder{
+        font-size: 1.5rem;
+    }
+
+    .right-side-userBio{
+        margin: 1rem 0 2rem 0;
+    }
+
+    .right-side-username {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
